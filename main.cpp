@@ -19,9 +19,9 @@ std::vector<double> read_file(std::string filepath) {
 }
 
 int main() {
-    std::vector<double> x_measured = read_file("../zmierzone_polozenie.csv");
-    std::vector<double> v_measured = read_file("../zmierzona_predkosc.csv");
-    std::vector<double> x_real = read_file("../rzeczywiste_polozenie.csv");
+    std::vector<double> x_measured = read_file("zmierzone_polozenie.csv");
+    std::vector<double> v_measured = read_file("zmierzona_predkosc.csv");
+    std::vector<double> x_real = read_file("rzeczywiste_polozenie.csv");
     std::vector<double> x_predictions;
 
     const double dt = 0.01;
